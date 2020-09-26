@@ -16,6 +16,7 @@ class EditActivity : AppCompatActivity() {
         //キーとデフォルト値を引数に指定して値を取り出す
         val company = pref.getString("company", "")
         val tel = pref.getString("tel", "")
+        val postal = pref.getString("postal", "")
         val address = pref.getString("address", "")
         val fax = pref.getString("fax", "")
         val email = pref.getString("email", "")
@@ -26,6 +27,7 @@ class EditActivity : AppCompatActivity() {
         //idに文字列をセットしている
         companyEdit.setText(company)
         telEdit.setText(tel)
+        postalEdit.setText(postal)
         addressEdit.setText(address)
         faxEdit.setText(fax)
         emailEdit.setText(email)
@@ -53,6 +55,7 @@ class EditActivity : AppCompatActivity() {
 
         editor.putString("company", companyEdit.text.toString())
             .putString("tel", telEdit.text.toString())
+            .putString("postal", postalEdit.text.toString())
             .putString("address", addressEdit.text.toString())
             .putString("fax", faxEdit.text.toString())
             .putString("email", emailEdit.text.toString())
