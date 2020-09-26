@@ -2,42 +2,42 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".EditActivity">
 
     <EditText
         android:id="@+id/companyEdit"
-        android:layout_width="320dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="@string/company_hint"
         android:inputType="text"
-        android:text="@string/company_hint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/postalEdit"
-        android:layout_width="146dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/postal_hint"
         android:inputType="number"
-        android:text="@string/postal_hint"
         app:layout_constraintStart_toStartOf="@+id/companyEdit"
         app:layout_constraintTop_toBottomOf="@+id/companyEdit" />
 
     <EditText
         android:id="@+id/addressEdit"
-        android:layout_width="350dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/address_hint"
         android:inputType="textPostalAddress"
-        android:text="@string/address_hint"
         app:layout_constraintStart_toStartOf="@+id/postalEdit"
         app:layout_constraintTop_toBottomOf="@+id/postalEdit" />
 
@@ -47,8 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/tel_hint"
         android:inputType="phone"
-        android:text="@string/tel_hint"
         app:layout_constraintStart_toStartOf="@+id/addressEdit"
         app:layout_constraintTop_toBottomOf="@+id/addressEdit" />
 
@@ -58,8 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/fax_hint"
         android:inputType="phone"
-        android:text="@string/fax_hint"
         app:layout_constraintStart_toStartOf="@+id/telEdit"
         app:layout_constraintTop_toBottomOf="@+id/telEdit" />
 
@@ -69,8 +69,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/email_hint"
         android:inputType="textEmailAddress"
-        android:text="@string/email_hint"
         app:layout_constraintStart_toStartOf="@+id/faxEdit"
         app:layout_constraintTop_toBottomOf="@+id/faxEdit" />
 
@@ -80,8 +80,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/url_hint"
         android:inputType="textUri"
-        android:text="@string/url_hint"
         app:layout_constraintStart_toStartOf="@+id/emailEdit"
         app:layout_constraintTop_toBottomOf="@+id/emailEdit" />
 
@@ -91,8 +91,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/position_hint"
         android:inputType="text"
-        android:text="@string/position_hint"
         app:layout_constraintStart_toStartOf="@+id/urlEdit"
         app:layout_constraintTop_toBottomOf="@+id/urlEdit" />
 
@@ -102,8 +102,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/name_hint"
         android:inputType="textPersonName"
-        android:text="@string/name_hint"
         app:layout_constraintStart_toStartOf="@+id/positionEdit"
         app:layout_constraintTop_toBottomOf="@+id/positionEdit" />
 

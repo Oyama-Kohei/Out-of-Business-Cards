@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         //キーとデフォルト値を引数に指定して値を取り出す
         val company = pref.getString("company", "")
         val tel = pref.getString("tel", "")
+        val postal = pref.getString("postal", "")
         val address = pref.getString("address", "")
         val fax = pref.getString("fax", "")
         val email = pref.getString("email", "")
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         companyText.text = company
         telText.text = tel
+        postalText.text = postal
         addressText.text = address
         faxText.text = fax
         emailText.text = email
